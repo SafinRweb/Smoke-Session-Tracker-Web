@@ -9,7 +9,7 @@ export default function CTA() {
         <p className={styles.sub}>
           Open the app, add the crew, and let the numbers do the talking. It's free, it's fast, it's fair.
         </p>
-        <a href="https://github.com/SafinRweb/Smoke-Session-Tacker/releases/download/v1.1/Smoke.Session.Tracker.apk" className={styles.btn} download="Smoke-Session-Tracker.apk">Download</a>
+        <a href="https://github.com/SafinRweb/Smoke-Session-Tacker/releases/download/v1.1/SmokeTracker-v1.1.0.apk" className={styles.btn} download="SmokeTracker-v1.1.0.apk">Download</a>
       </div>
     </section>
   );
