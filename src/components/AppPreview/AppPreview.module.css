@@ -1,0 +1,83 @@
+.section {
+  padding: 60px 20px;
+}
+
+.heading {
+  text-align: center;
+  font-size: clamp(1.5rem, 4vw, 2.2rem);
+  margin-bottom: 8px;
+}
+
+.sub {
+  text-align: center;
+  color: var(--text-dim);
+  margin-bottom: 40px;
+  font-size: .95rem;
+}
+
+.carousel {
+  display: flex;
+  gap: 16px;
+  overflow-x: auto;
+  scroll-snap-type: x mandatory;
+  -webkit-overflow-scrolling: touch;
+  padding: 0 14vw;
+  scrollbar-width: none;
+}
+
+.carousel::-webkit-scrollbar { display: none; }
+
+.slide {
+  flex: 0 0 72vw;
+  max-width: 320px;
+  scroll-snap-align: center;
+}
+
+.phone {
+  position: relative;
+  aspect-ratio: 9 / 19.5;
+  background: #000;
+  border: 4px solid rgba(255, 90, 31, 0.3);
+  border-radius: 20px;
+  overflow: hidden;
+}
+
+.screen {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+  border-radius: 20px;
+}
+
+.dots {
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+  margin-top: 24px;
+}
+
+.dot {
+  width: 8px;
+  height: 8px;
+  border-radius: 50%;
+  background: #333;
+  border: none;
+  cursor: pointer;
+  transition: background .25s, transform .25s;
+  padding: 0;
+}
+
+.dot.active {
+  background: var(--accent);
+  transform: scale(1.25);
+}
+
+@media (min-width: 768px) {
+  .slide {
+    flex: 0 0 40vw;
+    max-width: 280px;
+  }
+  .carousel {
+    padding: 0 20vw;
+  }
+}

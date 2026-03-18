@@ -1,0 +1,123 @@
+.footer {
+  padding: 60px 20px 0;
+  border-top: 1px solid rgba(255,255,255,.06);
+}
+
+.top {
+  display: grid;
+  grid-template-columns: 1fr;
+  gap: 40px;
+  max-width: 1000px;
+  margin: 0 auto;
+  padding-bottom: 40px;
+}
+
+/* Brand side */
+.brandHeader {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  margin-bottom: 10px;
+}
+
+.logo {
+  width: 40px;
+  height: 40px;
+  border-radius: 8px;
+  object-fit: contain;
+}
+
+.brandTitle {
+  font-family: var(--font-heading);
+  font-size: 1.1rem;
+}
+
+.brandDesc {
+  color: var(--text-dim);
+  font-size: .88rem;
+  line-height: 1.6;
+  margin-bottom: 16px;
+  max-width: 380px;
+}
+
+.tagline {
+  font-size: .85rem;
+  color: var(--text-dim);
+}
+
+/* Developer card */
+.devCard {
+  background: var(--bg-card);
+  border: 1px solid rgba(255,255,255,.06);
+  border-radius: var(--radius);
+  padding: 24px;
+}
+
+.devHeader {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  margin-bottom: 14px;
+}
+
+.devName {
+  font-family: var(--font-heading);
+  font-size: .95rem;
+}
+
+.devRole {
+  color: var(--text-dim);
+  font-size: .8rem;
+}
+
+.devLinks {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.devLink {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  color: var(--text-dim);
+  font-size: .85rem;
+  transition: color .25s;
+}
+
+.devLink:hover {
+  color: var(--accent);
+}
+
+.devLinkIcon {
+  font-size: 1rem;
+}
+
+/* Bottom bar */
+.bottom {
+  border-top: 1px solid rgba(255,255,255,.06);
+  padding: 18px 20px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.copy {
+  font-size: .8rem;
+  color: var(--text-dim);
+}
+
+.versionPill {
+  padding: 3px 10px;
+  background: rgba(255,90,31,.12);
+  color: var(--accent);
+  font-size: .7rem;
+  font-weight: 700;
+  border-radius: 50px;
+}
+
+@media (min-width: 700px) {
+  .top { grid-template-columns: 1fr 1fr; }
+}
