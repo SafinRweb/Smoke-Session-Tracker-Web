@@ -13,7 +13,7 @@ export default function Hero() {
           Track every cigarette, split the bill fairly, and end the addakhana chaos once and for all.
         </p>
         <div className={styles.buttons}>
-          <a href="https://github.com/SafinRweb/Smoke-Session-Tacker/releases/download/v1.1/SmokeTracker-v1.1.0.apk" className={styles.primary} download="SmokeTracker-v1.1.0.apk">Download</a>
+          <a href="/SmokeTracker-v1.1.0.apk" className={styles.primary} download="SmokeTracker-v1.1.0.apk">Download</a>
           <a href="#how-it-works" className={styles.ghost}>See How It Works</a>
         </div>
         <div className={styles.stats}>

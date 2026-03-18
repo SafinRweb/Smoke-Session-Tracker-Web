@@ -17,7 +17,7 @@ export default function Navbar() {
         <img src={logo} alt="Smoke Session Tracker" className={styles.logo} />
         <span className={styles.brandName}>Smoke Tracker</span>
       </div>
-      <a href="https://github.com/SafinRweb/Smoke-Session-Tacker/releases/download/v1.1/SmokeTracker-v1.1.0.apk" className={styles.cta} download="SmokeTracker-v1.1.0.apk">Download</a>
+      <a href="/SmokeTracker-v1.1.0.apk" className={styles.cta} download="SmokeTracker-v1.1.0.apk">Download</a>
     </nav>
   );
 }
